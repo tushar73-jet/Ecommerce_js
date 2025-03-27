@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #1e1e2f, #3b3b58);
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #f8f9fa;
+  margin-bottom: 20px;
+}
+
+#search-bar {
+  width: 80%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #777;
+  background: #282846;
+  color: white;
+  font-size: 16px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.controls select, #view-cart {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #888;
+  border-radius: 8px;
+  background: #33334d;
+  color: white;
+  cursor: pointer;
+}
+
+.controls select:hover, #view-cart:hover {
+  background: #444466;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background: #22223b;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2);
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 5px;
+  background: #ffffff1a;
+  padding: 10px;
+}
+
+.product-card h3 {
+  font-size: 1rem;
+  color: #f1f1f1;
+  margin-bottom: 8px;
+}
+
+.product-card p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffcc00;
+  margin-bottom: 12px;
+}
+
+button {
+  background-color: #ffcc00;
+  color: black;
+  border: none;
+  padding: 12px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #e6b800;
+}
+
+footer {
+  margin-top: 20px;
+  padding: 10px;
+  background: #111;
+  color: #bbb;
+}
